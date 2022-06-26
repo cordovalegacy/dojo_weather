@@ -1,0 +1,159 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    background-color: skyblue;
+    color: white;
+    margin-left:100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+#title{
+    font-size:50px;
+}
+
+#city-name{
+    display: flex;
+    gap:200px;
+}
+
+#cities1, #cities2, #cities3{
+    cursor: pointer;
+    font-size:40px;
+}
+
+.row-bar{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    border-bottom: 2px solid black;
+    color: black;
+    margin-left:100px;
+    margin-right:100px;
+    margin-bottom: 50px;
+    overflow:hidden;
+}
+
+#current-city{
+    flex: .6;
+    font-size: 35px;
+}
+
+.temp-type{
+    display:flex;
+    align-items:center;
+    gap: 25px;
+    font-size:20px; 
+}
+
+.weather{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-between;
+    margin-left:100px;
+    margin-right:100px;
+    overflow:hidden;
+}
+
+#weather-icon1, #weather-icon2, #weather-icon3, #weather-icon4{
+    border-radius: 50%;
+    margin: 25px;
+}
+
+#days1, #days2, #days3, #days4{
+    text-align:center;
+    font-weight:bold;
+    font-size:40px;
+}
+
+#weather-description1, #weather-description2, #weather-description3, #weather-description4{
+    text-align: center;
+    font-weight:bold;
+    font-size:20px;
+    margin-top: -10px;
+}
+
+#temps1, #temps2, #temps3, #temps4{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+#high1, #high2, #high3, #high4{
+    color: red;
+    font-size:25px;
+    font-weight: bold;
+}
+
+#low1, #low2, #low3, #low4{
+    color: darkcyan;
+    font-size:25px;
+    font-weight: bold;
+}
+
+.today{
+    background-color:whitesmoke;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+.tomorrow{
+    background-color:whitesmoke;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+.friday{
+    background-color:whitesmoke;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+.saturday{
+    background-color:whitesmoke;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+.cookie-message{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-between;
+    margin-left:100px;
+    margin-right:100px;
+    margin-top: 20px;
+    border:2px solid black;
+    box-shadow: 2px 2px 2px 2px gray;
+    position: fixed;
+}
+
+#cookie{
+    width:10%;
+    margin-left:50px;
+}
+
+#cookie-alert-box{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-left:100px;
+    margin-right:100px;
+}
+
+#read-more{
+    text-decoration: underline;
+    color: blue;
+}
+
+#accept{
+    background-color: skyblue;
+    width:8%;
+    height:50px;
+    color:black;
+    margin-right: 50px;
+    font-size:20px;
+    box-shadow: 4px 4px;
+}

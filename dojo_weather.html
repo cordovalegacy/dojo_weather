@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dojo_weather.css">
+    <title>Dojo Weather</title>
+</head>
+<body>
+    <nav>
+        <h2 id="title">DojoWeather</h2>
+        <div id="city-name">
+        <a id="cities1" onclick="clickCity()">Burbank</a>
+        <a id="cities2" onclick="clickCity()">Chicago</a>
+        <a id="cities3" onclick="clickCity()">Dallas</a>
+        </div>
+    </nav>
+    <div class="row-bar">
+        <h2 id="current-city">San Jose</h2>
+        <div class="temp-type">
+        <p>show temperature in</p>
+        <select name="temp" id="temp-type" onchange="cToF()">
+        <option>C'</option>
+        <option>F'</option>
+        </select>
+        </div>
+    </div>
+    <div class="weather">
+        <div class="today">
+            <h1 id="days1">Today</h1>
+            <img src="some_rain.png" id="weather-icon1" alt="weather-icon">
+            <p id="weather-description1">some rain</p>
+            <div id="temps1">
+                <p id="high1">24'</p>
+                <p id="low1">18'</p>
+            </div>
+        </div>
+        <div class="tomorrow">
+            <h1 id="days2">Tomorrow</h1>
+            <img src="some_sun.png" id="weather-icon2" alt="weather-icon">
+            <p id="weather-description2">some sun</p>
+            <div id="temps2">
+                <p id="high2">27'</p>
+                <p id="low2">19'</p>
+            </div>
+        </div>
+        <div class="friday">
+            <h1 id="days3">Friday</h1>
+            <img src="some_clouds.png" id="weather-icon3" alt="weather-icon">
+            <p id="weather-description3">some clouds</p>
+            <div id="temps3">
+                <p id="high3">21'</p>
+                <p id="low3">16'</p>
+            </div>
+        </div>
+        <div class="saturday">
+            <h1 id="days4">Saturday</h1>
+            <img src="some_sun.png" id="weather-icon4" alt="weather-icon">
+            <p id="weather-description4">some sun</p>
+            <div id="temps4">
+                <p id="high4">26'</p>
+                <p id="low4">21'</p>
+            </div>
+        </div>
+    </div>
+    <div class="cookie-message">
+        <img src="cookie.png" id="cookie" alt="cookie">
+        <div id="cookie-alert-box">
+        <h1 id="cookie-alert">Stop! Cookie Time</h1>
+        <h2 id="cookie-disclosure">We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to anylyze traffic. <a id="read-more">Read More...</a></h2>
+        </div>
+        <button id="accept" onclick="acceptCookies()">I Accept</button>
+    </div>
+    <script src="dojo_weather.js"></script>
+</body>
+</html>
